@@ -1,32 +1,129 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<head>
-  <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
-</head>
-  <title>Elizabeth Schall</title>
-</head>
+<html lang="eng">
+    <head>
+        <!--META TAGS-->
+        <meta charset="utf-8"/>
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Elizabeth S">
+        <meta name="description" content="Analyze how weather changes as you get closer to the equator">
 
-<body>
-  <!-- Header -->
-  <h1>Elizabeth Schall</h1>
+        <!--BOOTSTRAP  CSS-->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="Styles.css">
+        <title>WeatherPy</title>
 
-  <!-- Image -->
-  <img src="https://media-exp1.licdn.com/dms/image/C5603AQFW7gRy6_Oo5A/profile-displayphoto-shrink_200_200/0?e=1610582400&v=beta&t=jKUDZ6Kok0Erp_BFBvZpV3lreE1I963T3fy6a_jqCWc" />
-  <br>
+    </head>
 
-  <!-- Link with New Tab -->
-  <a href="https://www.google.com" target="_blank">Opens new tab</a>
-  <br>
+    <!--BODY-->
 
-  <!-- Bold Link -->
-  <strong><iframe width="560" height="315" src="https://www.youtube.com/embed/pLN-EnS_QLA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>Zombie The Voice</strong>
-  <br>
+    <!--NAVBAR-->
+    <body>
+            
+            <nav class="navbar navbar-expand-lg navbar-dark bg-medium">     
+                    <a class="navbar-brand" style="color:#9f0fd8" href="index.html">WeatherPy</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" style="color:#9f0fd8" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-  <!-- Placeholder link -->
-  <a href="#">This is placeholder link goes nowhere, for now</a>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        
+                        <li class="nav-item active">
+                          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                       
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plots
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                          </div>
+                        </li>
+                        
+                        <li class="nav-item">
+                          <a class="nav-link " href="comparisons.html" tabindex="-1" >Comparisons</a>
+                        </li>
+                        <li class = "nav-item">
+                          <a class = "nav-link " href="data.html" tabindex="-1" >Data</a>
+                        </li>
+                        
+                        </ul>
+                      
+                    </div>
+                </nav>
 
-</body>
+
+
+                <!--JUMBOTRON-->
+                <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                          <h1 class="display-4">Weather Analysis Visualization</h1><br>
+                          <p class="lead"><p>The purpose of this project was to analyze how weather changes as you get closer to the equator.
+                                To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                                After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included:</br>
+                                <p>temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                              </p><br>
+                              <p class ="lead">To get an in-depth analysis you can use the Plots dropdown button in the toolbar or click the link above the graph.</p>
+                        </div>
+                </div>
+
+                <!--SIDEBAR-->
+                <div class="sidebar">
+                  <div class="col-sm-12 col-md-9">
+                    <div id="visualizations">
+                      <div class = "row">
+                        <div class="col-3 col-sm-3 col-md-6">
+                            <a href="temperature.html">Max Temperature<br></br>
+                              <img class = "img-fluid img-downsize-sm" src="Resources/assets/images/latvstemp.png" alt="Max Temperature Graph"><br></br>
+                            </a>
+                        </div>
+                        <div class="col-3 col-sm-3 col-md-6">
+                          <a href="humidity.html">Humidity<br></br>
+                            <img class = "img-fluid img-downsize-sm" src="Resources/assets/images/latvshumid.png" alt="Humidity Graph"><br></br>
+                          </a>
+                        </div>
+                        <div class="col-3 col-sm-3 col-md-6">
+                          <a href="cloudiness.html">Cloudiness<br></br>
+                            <img class = "img-fluid img-downsize-sm" src="Resources/assets/images/latvscloudy.png" alt="Cloudiness Graph"><br></br>
+                          </a>
+                        </div>
+                        <div class="col-3 col-sm-3 col-md-6">
+                          <a href="windspeed.html">Wind Speed<br></br>
+                            <img class = "img-fluid img-downsize-sm" src="Resources/assets/images/latvswindy.png" alt="Wind Speed Graph"><br></br>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                </div>    
+                
+
+                    <footer class="footer">
+                            <div class="container">
+                              <address>
+                                <p class="text text-left">Author Github:
+                                <a href="https://github.com/elizabethschall2934" target="_blank">https://github.com/elizabethschall2934
+                                </a></address>
+                                <small>© Copyright Elizabeth S</br>
+                                </small>
+                              </p>
+                            </div>
+                          </footer>
+
+
+                    <!-- Optional JavaScript -->
+                    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>       
+
+
 
 </html>
-
