@@ -7,26 +7,33 @@ body {
     
 }
 
+.panel-title{
+  color: #860cb6;
+}
 
-.navbar-brand{
-	font-family: "Avantgarde", TeX Gyre Adventor, URW Gothic L, sans-serif;
-	font-weight: 800;
-	font-size: 20px;
-    margin-left: auto;
-    
+.panel-primary > .panel-heading{
+  background-image: none;
+  background-color: #ec1fdb;
+  color: white;
 }
 
 a {
 	color: #9f0fd8;
   }
   
-th {
+h3 {
+  color: #860cb6;
+  }
+
+h5 {
 	color: #9f0fd8;
    }
 
-td {
+h6 {
 	color: #9f0fd8;
    }
+
+
 
 footer.footer{
 	background-color:#da84d5;
