@@ -1,0 +1,42 @@
+body {
+    background: #e4c3e4ee;
+    color: #d80fc7;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: "Avantgarde", TeX Gyre Adventor, URW Gothic L, sans-serif;
+    
+}
+
+.panel-title{
+  color: #860cb6;
+}
+
+.panel-primary > .panel-heading{
+  background-image: none;
+  background-color: #ec1fdb;
+  color: white;
+}
+
+a {
+	color: #9f0fd8;
+  }
+  
+h3 {
+  color: #860cb6;
+  }
+
+h5 {
+	color: #9f0fd8;
+   }
+
+h6 {
+	color: #9f0fd8;
+   }
+
+
+
+footer.footer{
+	background-color:#da84d5;
+	border-radius: .3rem;
+	padding: 5px 5px;
+}
